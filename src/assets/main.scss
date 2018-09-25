@@ -1,0 +1,50 @@
+/* Angular Material prebuilt theme for the Angular CLI */
+@import 'theme.scss';
+@import 'colors';
+/*////////////////////////////////////////////////////////////////////////
+// Make changes? use npm run compile:sass in terminal to update styles.css
+////////////////////////////////////////////////////////////////////////*/
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+  }
+  
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 50px 10%;
+}
+
+
+h1, h2 {
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 3px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 0px 0px;
+  color: $dark-grey;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0px;
+  color: $dark-grey;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+      text-align: left;
+      font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+      font-size: 20px;
+  }
+}

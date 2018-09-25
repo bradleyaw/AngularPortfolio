@@ -1,0 +1,48 @@
+.project-image-div {
+    background: 
+    linear-gradient(63deg, #5C6BC0 23%, transparent 23%) 7px 0, 
+    linear-gradient(63deg, transparent 74%, #5C6BC0 78%), 
+    linear-gradient(63deg, transparent 34%, #5C6BC0 38%, #5C6BC0 58%, transparent 62%), #1A237E;
+    background-size: 16px 48px;
+    min-height: 170px;
+    padding-top: 80px;
+  }
+
+  h1 {
+      color: white;
+  }
+  button {
+      color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .port-nav {
+      background-color: #1A237E;
+      height: 36px;
+  }
+  .port-nav ul{
+    margin: 0;
+  }
+  .port-nav li {
+    display: inline;
+    list-style-type: none;
+  }
+
+  .port-link {
+    display: block;
+    width: 70px;
+    margin: 15px 0px;
+    text-align: center
+  }
+
+  .repo-link {
+    background-color: #1A237E;
+  }
+
+  .live-link {
+    background-color: #5C6BC0;
+
+  }

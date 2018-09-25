@@ -1,0 +1,4 @@
+ng new APPNAME - creates new angular app in APPNAME folder
+ng serve - launches app on 4200 by default
+ng g component components/NEWNAME - creates new component
+ng build - builds app for deployment

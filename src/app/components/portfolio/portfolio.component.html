@@ -1,0 +1,39 @@
+<div class="project-image-div">
+  <h1>
+    {{displayedContent.name}}
+  </h1>
+</div>
+<div class="port-nav">
+  <nav>
+    <ul>
+      <li *ngFor='let project of projects'>
+          <button mat-button  class="promo-buttons" (click)='onClick(project.name)'>{{project.name}}</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutAlign="center">
+  <div fxFlex="100%">
+    <h2>Project Overview</h2>
+  </div>
+  <div fxFlex="48%">
+    <h3>Problem</h3>
+    <p>{{displayedContent.problem}}</p>
+  </div>
+  <div fxFlex="48%">
+    <h3>Solution</h3>
+    <p>{{displayedContent.solution}}</p>
+  </div>
+  <div fxFlex="100%">
+    <div fxFlex="48%">
+      <h3>Key Technologies</h3>
+      <ul>
+        <li *ngFor='let tech of displayedContent.techs'>{{tech}}</li>
+      </ul>
+    </div>
+    <div fxFlex="48%">
+      <a class="port-link repo-link" href={{displayedContent.repolink}} target="_blank">Repo Link</a>
+      <a class="port-link live-link" href={{displayedContent.livelink}} target="_blank">Live Link</a>
+    </div>
+  </div>
+</main>

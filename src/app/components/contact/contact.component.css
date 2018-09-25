@@ -1,0 +1,29 @@
+/* Icon CSS */
+i {
+  margin: 12px;
+  -webkit-transition: -webkit-transform 3s;
+  /* Safari */
+  transition: transform 3s; }
+
+i:hover {
+  -webkit-transform: rotate(360deg);
+  /* Safari */
+  transform: rotate(360deg); }
+
+/* Form CSS */
+.form-container {
+  display: flex;
+  flex-direction: column; }
+
+.form-container > * {
+  width: 60%; }
+
+.form-container form {
+  margin-bottom: 20px; }
+
+.form-container form > * {
+  margin: 5px 0; }
+
+.submit-button {
+  font-size: 1.2rem;
+  margin-top: 10px; }
