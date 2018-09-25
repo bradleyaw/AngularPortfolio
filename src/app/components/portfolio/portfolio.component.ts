@@ -63,17 +63,22 @@ export class PortfolioComponent implements OnInit {
     ]
   }
   onClick(projectName) {
-    console.log(projectName);
-    if (projectName === "ConTECH") {
-      this.replaceContent(0);
-    } else if (projectName === "Crown Town Crafts") {
-      this.replaceContent(1)
-    } else if (projectName === "Data Tree") {
-      this.replaceContent(2)
-    } else if (projectName === "My Portfolio") {
-      this.replaceContent(3)
+    switch(projectName) {
+      case "conTECH":
+        this.replaceContent(0);
+        break;
+      case "Crown Town Crafts":
+        this.replaceContent(1);
+        break;
+      case "Data Tree":
+        this.replaceContent(2);
+        break;
+      case "My Portfolio":
+        this.replaceContent(3);
+        break;
+    }
   }
-  }
+  
   replaceContent(num) {
     this.displayedContent.name = this.projects[num].name;
     this.displayedContent.problem = this.projects[num].problem;
