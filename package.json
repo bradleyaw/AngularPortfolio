@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compile:sass": "node-sass src/app/components/home/home.scss src/app/components/home/home.component.css -w | node-sass src/app/components/contact/contact.scss src/app/components/contact/contact.component.css -w | node-sass src/app/components/portfolio/portfolio.scss src/app/components/portfolio/portfolio.component.css -w | node-sass src/app/components/nav/nav.scss src/app/components/nav/nav.component.css -w | node-sass src/assets/main.scss src/styles.css -w",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
